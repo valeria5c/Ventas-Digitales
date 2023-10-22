@@ -1,0 +1,186 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/*Estilo logo*/
+.logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 5%;
+    margin-top: 100px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+    color: var(--pink);
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+
+.btn:hover{
+    background: var(--pink);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .navbar a{
+    font-size: 15px;
+    padding: 0 1.5rem;
+    color: #666;
+    font-weight: bold;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: rgb(135, 236, 214);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: 1rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 0rem solid rgba(0, 0, 0, .3);
+    display: none;   
+}
+
+
+.inicio{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://tahecosmetics.com/trends/wp-content/uploads/2022/06/historia-del-maquillaje-768x432.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.inicio .contenido{
+    max-width: 50rem;
+}
+
+
+.inicio .contenido h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+
+.inicio .contenido span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+.inicio .contenido p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.informativa .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.informativa .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.informativa .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    height: 10%;
+    object-fit: cover;
+}
+
+.informativa .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #be1c1c;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.informativa .row .contenido{
+    flex: 1 1 40rem;
+}
